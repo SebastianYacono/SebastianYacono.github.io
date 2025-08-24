@@ -1,0 +1,148 @@
+<!-- software.html (Portafolio de Software) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Software | Sebastián Yácono</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .web-services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 15px;
+    }
+    .web-service {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    .web-service img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .web-service h3 {
+      margin: 8px 0 4px;
+      font-size: 18px;
+    }
+    .web-service p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Sebastián Yácono</div>
+      <nav>
+        <a href="index.html">CV</a>
+        <a href="software.html" class="active">Portafolio Desarrollo</a>
+        <a href="diseno.html">Portafolio Diseño</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h1>Portafolio de Desarrollo</h1>
+      <p class="subtitle">Proyectos desarrollados en C#, .NET, QA y más</p>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <h3>1WinKey</h3>
+          <p>Aplicación de escritorio en C# y SQLite para consultar y organizar claves KMS (GVLK) de Windows y Office. Permite seleccionar versión, edición y obtener la clave correspondiente de forma rápida, pensada con fines educativos en entornos controlados.</p>
+          <div class="galeria">
+            <img src="assets/img/1wk1.jpg" alt="1WinKey 1" onclick="openModal(this)">
+            <img src="assets/img/1wk2.jpg" alt="1WinKey 2" onclick="openModal(this)">
+            <img src="assets/img/1wk3.jpg" alt="1WinKey 3" onclick="openModal(this)">
+          </div>
+          <p><b>Estado:</b> Completo</p>
+          <a href="https://github.com/SebastianYacono/1WinKey" target="_blank">Ver en GitHub</a>
+
+          <div class="sep"></div>
+
+          <h3>Eutopia</h3>
+          <p>Software de gestión para bares y restaurantes desarrollado en C# con base de dastos SQLite para lo interno y PostgreSQL para el login en línea a través de S-Core API. Facilita la administración de mesas, pedidos, cocina, compras y personal, centralizando las operaciones para mejorar la organización y optimizar el servicio.</p>
+          <div class="galeria">
+            <img src="assets/img/eut4.png" alt="Login" onclick="openModal(this)">
+            <img src="assets/img/eut1.png" alt="Configuración Inicial" onclick="openModal(this)">
+            <img src="assets/img/eut2.png" alt="Pantalla Principal" onclick="openModal(this)">
+            <img src="assets/img/eut3.png" alt="Sección Ventas de Salón" onclick="openModal(this)">
+          </div>
+          <p><b>Estado:</b> En desarrollo</p>
+          <p>Aún no disponible en GitHub</p>
+
+          <div class="sep"></div>
+
+          <h3>Dental Manager</h3>
+          <p>Software de gestión integral para centros odontológicos, desarrollado en .NET Framework con base de datos MySQL. Permite administrar turnos, fichas médicas y la historia clínica completa del paciente, registrando cada tratamiento diente por diente para un seguimiento preciso.</p>
+          <div class="galeria">
+            <img src="assets/img/dm1.jpg" alt="Login" onclick="openModal(this)">
+            <img src="assets/img/dm2.jpg" alt="Trabajo en diente" onclick="openModal(this)">
+            <img src="assets/img/dm3.jpg" alt="Pantalla consultorio" onclick="openModal(this)">
+            <img src="assets/img/dm4.jpg" alt="Agenda de citas" onclick="openModal(this)">
+          </div>
+          <p><b>Estado:</b> En desarrollo</p>
+          <p>Aún no disponible en GitHub</p>
+        </div>
+      </div>
+    </section>
+  </br>
+    <!-- Nueva sección -->
+    <section class="card">
+  <h2>Otros proyectos</h2>
+  <div class="web-services">
+    <div class="web-service">
+      <img src="assets/img/web1.png" alt="Captura de Southland Chronicles" onclick="openModal(this)">
+      <h3>Southland Chronicles</h3>
+      <p>Sitio web desarrollado en la plataforma Wix para Southland Institute, diseñado como un blog dinámico para documentar y difundir las actividades y proyectos realizados por los alumnos.</p>
+      <a href="https://southlandchronicles.wixsite.com/southlandchronicles" target="_blank">Ver Sitio</a>
+    </div>
+    <div class="web-service">
+      <img src="assets/img/web2.png" alt="Captura de Lilith M. Bathory" onclick="openModal(this)">
+      <h3>Lilith M. Bathory</h3>
+      <p>Sitio web creado en WordPress para la escritora cordobesa Lilith M. Bathory, concebido como un blog para compartir y difundir sus escritos con la comunidad.</p>
+      <a href="https://lilithmbathory.wordpress.com/" target="_blank">Ver Sitio</a>
+    </div>
+    <div class="web-service">
+      <img src="assets/img/web3.png" alt="Captura de S-Core API" onclick="openModal(this)">
+      <h3>S-Core API</h3>
+      <p>API desarrollada en ASP.NET Core para la validación de licencias y gestión de usuarios, conectada a base de datos en Supabase, optimizada para integrarse con aplicaciones de escritorio.</p>
+    </div>
+  </div>
+</section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Sebastián Yácono — <a href="mailto:sebayacono@gmail.com">Email</a> | <a href="https://wa.me/5493517599456">WhatsApp</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    function openModal(imgEl) {
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("imgAmpliada");
+      modal.style.display = "flex";
+      modalImg.src = imgEl.src.replace('-thumb', '');
+    }
+    function closeModal(e) {
+      if (e.target.id === "modal" || e.target.classList.contains("cerrar")) {
+        document.getElementById("modal").style.display = "none";
+      }
+    }
+  </script>
+
+  <!-- Modal único para todas las imágenes -->
+  <div id="modal" class="modal" style="display:none;" onclick="closeModal(event)">
+    <span class="cerrar" onclick="closeModal(event)">&times;</span>
+    <img class="modal-content" id="imgAmpliada">
+  </div>
+</body>
+</html>

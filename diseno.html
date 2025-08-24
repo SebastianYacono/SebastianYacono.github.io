@@ -1,0 +1,89 @@
+<!-- diseno.html (Portafolio de Diseño Gráfico) -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Diseño | Sebastián Yácono</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Sebastián Yácono</div>
+      <nav>
+        <a href="index.html">CV</a>
+        <a href="software.html">Portafolio Desarrollo</a>
+        <a href="diseno.html" class="active">Portafolio Diseño</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h1>Portafolio de Diseño Gráfico</h1>
+      <div class="portfolio-grid">
+        <!-- Ejemplo de proyecto -->
+        <div class="portfolio-item">
+          <h3>Tarjetas personales</h3>
+          <p>Creación y desarrollo de diseños publicitarios profesionales para tarjetas empresariales, enfocados en
+            transmitir la identidad visual de cada marca y generar una impresión duradera en clientes y socios.</p>
+          <div class="galeria">
+            <img src="assets/img/tp1.jpg" alt="Tarjeta 1" onclick="openModal(this)">
+            <img src="assets/img/tp2.jpg" alt="Tarjeta 2" onclick="openModal(this)">
+            <img src="assets/img/tp3.jpg" alt="Tarjeta 3" onclick="openModal(this)">
+            <img src="assets/img/tp6.jpg" alt="Tarjeta 4" onclick="openModal(this)">
+            <img src="assets/img/tp5.jpg" alt="Tarjeta 5" onclick="openModal(this)">
+          </div>
+          </br>
+
+          <div class="sep"></div>
+          
+          <div class="portfolio-item">
+          <h3>Folletería</h3>
+          <p>Desarrollo de material gráfico impreso como folletos, trípticos y flyers, pensado para comunicar de manera
+            clara y atractiva los productos o servicios de la empresa. Cada diseño busca captar la atención del público
+            objetivo y reforzar la presencia de la marca.</p>
+          <div class="galeria">
+            <img src="assets/img/fol1.jpg" alt="Folleto 1" onclick="openModal(this)">
+            <img src="assets/img/fol5.jpg" alt="Folleto 2" onclick="openModal(this)">
+            <img src="assets/img/fol3.jpg" alt="Folleto 3" onclick="openModal(this)">
+            <img src="assets/img/fol6.jpg" alt="Folleto 6" onclick="openModal(this)">
+            <img src="assets/img/fol4.jpg" alt="Folleto 4" onclick="openModal(this)">
+            <img src="assets/img/fol2.jpg" alt="Folleto 5" onclick="openModal(this)">
+          </div>
+
+          <div id="modal" class="modal" style="display:none;" onclick="closeModal(event)">
+            <span class="cerrar" onclick="closeModal(event)">&times;</span>
+            <img class="modal-content" id="imgAmpliada">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Sebastián Yácono — <a href="mailto:sebayacono@gmail.com">Email</a> | <a
+        href="https://wa.me/5493517599456">WhatsApp</a></p>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    function openModal(imgEl) {
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("imgAmpliada");
+      modal.style.display = "flex";
+      modalImg.src = imgEl.src.replace('-thumb', '');
+    }
+
+    function closeModal(e) {
+      if (e.target.id === "modal" || e.target.classList.contains("cerrar")) {
+        document.getElementById("modal").style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
