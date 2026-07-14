@@ -4,54 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio Software | Sebastián Yácono</title>
+  <title>Sebastián Yácono | Portafolio Software</title>
   <link rel="stylesheet" href="assets/style.css" />
-  <style>
-    .web-services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 15px;
-    }
-    .web-service {
-      background: var(--card);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 12px;
-      padding: 12px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    }
-    .web-service img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-    .web-service h3 {
-      margin: 8px 0 4px;
-      font-size: 18px;
-    }
-    .web-service p {
-      font-size: 14px;
-      color: var(--muted);
-    }
-  </style>
+  
 </head>
 <body>
   <header class="navbar">
     <div class="nav-container">
       <div class="logo">Sebastián Yácono</div>
       <nav>
-        <a href="index.html">CV</a>
-        <a href="software.html" class="active">Portafolio Desarrollo</a>
-        <a href="diseno.html">Portafolio Diseño</a>
+        <a href="index.html">Principal</a>
+        <a href="cv.html">CV</a>
+        <a href="software.html" class="active">Portfolio Desarrollo</a>
+        <a href="diseno.html" >Portfolio Diseño</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap">
     <section class="card">
-      <h1>Portafolio de Desarrollo</h1>
+      <h1>Sebastián Yácono: Portfolio de Desarrollo</h1>
       <p class="subtitle">Proyectos desarrollados en C#, .NET, QA y más</p>
       <div class="portfolio-grid">
         <div class="portfolio-item">
@@ -114,6 +86,18 @@
       <img src="assets/img/web3.png" alt="Captura de S-Core API" onclick="openModal(this)">
       <h3>S-Core API</h3>
       <p>API desarrollada en ASP.NET Core para la validación de licencias y gestión de usuarios, conectada a base de datos en Supabase, optimizada para integrarse con aplicaciones de escritorio.</p>
+    </div>
+    <div class="web-service">
+      <img src="assets/img/web4.png" alt="Captura de S-Core API" onclick="openModal(this)">
+      <h3>Fragancias del Desierto</h3>
+      <p>Tienda online desarrollada en la plataforma Tienda Nube para Fragancias del Desierto, diseñada como un espacio de comercio electrónico enfocado en la comercialización y difusión de su catálogo de fragancias.</p>
+      <a href="https://fraganciasdeldesierto3.mitiendanube.com/" target="_blank">Ver Sitio</a>
+    </div>
+    <div class="web-service">
+      <img src="assets/img/web5.png" alt="Captura de S-Core API" onclick="openModal(this)">
+      <h3>Academy Progress Tracker</h3>
+      <p>Academy Progress Tracker es una plataforma desarrollada en Google Sheets con código personalizado, diseñada para gestionar y realizar el seguimiento del progreso académico de estudiantes de forma práctica y organizada.</p>
+      <a href="https://docs.google.com/spreadsheets/d/1emqUU6NvVEz_-iBGkvCcQFoK_F3foe_1eFEG2JZHoRg/edit?usp=sharing" target="_blank">Ver Sitio</a>
     </div>
   </div>
 </section>
